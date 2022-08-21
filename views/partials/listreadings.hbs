@@ -1,0 +1,28 @@
+<table class="ui table">
+  <thead>
+  <tr>
+    <th>code</th>
+    <th>temp</th>
+    <th>windspeed</th>
+    <th>pressure</th>
+  </tr>
+  </thead>
+  <tbody>
+  {{#each stationlist.readings}}
+    <tr>
+      <td>
+        {{code}}
+      </td>
+      <td>
+        {{temp}}
+      </td>
+      <td>
+        {{windspeed}}
+      </td>
+      <td>
+        {{pressure}}
+      </td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>

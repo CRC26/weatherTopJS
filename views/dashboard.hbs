@@ -1,0 +1,42 @@
+{{> menu id="dashboard"}}
+
+  {{> mainpanel}}
+
+{{#each stationlists}}
+
+
+  <section class="ui segment">
+    <h2 class="ui header">
+      {{station}}
+    </h2>
+    {{>stationpanel}}
+    <table class="ui table">
+      <thead>
+      <tr>
+        <th>code</th>
+        <th>temp</th>
+        <th>windspeed</th>
+        <th>pressure</th>
+      </tr>
+      </thead>
+      <tbody>
+      {{#each readings}}
+        <tr>
+          <td>
+            {{code}}
+          </td>
+          <td>
+            {{temp}}
+          </td>
+          <td>
+            {{windspeed}}
+          </td>
+          <td>
+            {{pressure}}
+          </td>
+        </tr>
+      {{/each}}
+      </tbody>
+    </table>
+  </section>
+{{/each}}
