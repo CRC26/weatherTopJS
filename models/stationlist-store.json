@@ -7,13 +7,13 @@
         {
           "code": "800",
           "temp": "0.5",
-          "windspeed": "3.5",
+          "windSpeed": "3.5",
           "pressure": "1001"
         },
         {
           "code": "600",
           "temp": "6.0",
-          "windspeed": "2",
+          "windSpeed": "2",
           "pressure": "1004"
         }
       ]
@@ -24,13 +24,13 @@
         {
           "code": "700",
           "temp": "8.0",
-          "windspeed": "1.0",
+          "windSpeed": "1.0",
           "pressure": "1000"
         },
         {
           "code": "200",
           "temp": "0.5",
-          "windspeed": "3.5",
+          "windSpeed": "3.5",
           "pressure": "999"
 
         }

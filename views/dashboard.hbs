@@ -1,10 +1,6 @@
 {{> menu id="dashboard"}}
 
-  {{> mainpanel}}
-
-{{#each stationlists}}
-
-
+{{#each stations}}
   <section class="ui segment">
     <h2 class="ui header">
       {{station}}
@@ -13,10 +9,10 @@
     <table class="ui table">
       <thead>
       <tr>
-        <th>code</th>
-        <th>temp</th>
-        <th>windspeed</th>
-        <th>pressure</th>
+        <th>Weather Code</th>
+        <th>Temperature</th>
+        <th>Wind Speed</th>
+        <th>Pressure</th>
       </tr>
       </thead>
       <tbody>
@@ -29,7 +25,7 @@
             {{temp}}
           </td>
           <td>
-            {{windspeed}}
+            {{windSpeed}}
           </td>
           <td>
             {{pressure}}

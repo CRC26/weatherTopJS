@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const logger = require("../utils/logger");
 
@@ -13,3 +13,4 @@ const about = {
 };
 
 module.exports = about;
+
