@@ -1,0 +1,17 @@
+<table class="ui celled table">
+  <thead>
+  {{> reading-header}}
+  </thead>
+  <tbody>
+    {{#each readings}}  {{!//passing stationlist id as a parameter for reading row -update route in reading-row }}
+      {{>reading-row
+        date=date
+        code=code
+        temp=temp
+        windSpeed=windSpeed
+        windDirection=windDirection
+        pressure=pressure
+        stationlistid=../stationlist.id}}
+    {{/each}}
+  </tbody>
+</table>

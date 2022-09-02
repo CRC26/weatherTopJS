@@ -1,28 +1,4 @@
-<table class="ui table">
-  <thead>
-  <tr>
-    <th>code</th>
-    <th>temp</th>
-    <th>windSpeed</th>
-    <th>pressure</th>
-  </tr>
-  </thead>
-  <tbody>
-  {{#each station.readings}}
-    <tr>
-      <td>
-        {{code}}
-      </td>
-      <td>
-        {{temp}}
-      </td>
-      <td>
-        {{windSpeed}}
-      </td>
-      <td>
-        {{pressure}}
-      </td>
-    </tr>
-  {{/each}}
-  </tbody>
-</table>
+
+<section class="ui stacked segment">
+  {{station-panel}}  {{station:station}}
+</section>

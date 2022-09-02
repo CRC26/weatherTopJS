@@ -1,56 +1,61 @@
 
-<div class="ui cards" style="margin-right: 05px; margin-left: 05px;">
-  <div class="row">
-    <div class="column">
-      <div class="card">
-        <div class="ui inverted segment">
-          <div class="container">
-            <div class="card-body">
-                <p> Latest Weather Conditions: </p>
-              <p> {{currentWeather}} </p>
-            </div>
-          </div>
+<div class="ui five stackable inverted cards" style="margin-right: 10px; margin-left: 05px;">
+  <div class="card">
+    <div class="ui inverted segment">
+      <div class="container">
+        <div class="card-body">
+          <h2> {{title}} </h2>
+          <p>{{longitude}} </p>
+          <p>{{latitude}} </p>
         </div>
       </div>
     </div>
   </div>
-  <div class="column">
     <div class="card" style="margin-right: 05px; margin-left: 05px;">
       <div class="ui inverted segment">
         <div class="container">
           <div class="card-body">
-            <p> Latest Temperature: </p>
+            <h5> Weather Conditions: </h5>
+            <p> {{currentWeather}} </p>
+          </div>
+        </div>
+       </div>
+    </div>
+    <div class="card" style="margin-right: 05px; margin-left: 05px;">
+      <div class="ui inverted segment">
+        <div class="container">
+          <div class="card-body">
+            <h5> Temperature: </h5>
             <p> {{tempC}}  *C</p>
             <p> {{cToF}}  *F</p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="column">
     <div class="card">
       <div class="ui inverted segment">
         <div class="container">
           <div class="card-body">
-            <p> Latest Wind:  </p>
+            <h5> Wind Speed:  </h5>
             <p>{{windSpeedToBft}} Bft</p>
+            <h5>Wind Compass</h5>
+            <p>{{degreesToCompass}}</p>
+            <h5>Feels like:</h5>
+            <p>{{windChill}} C</p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="column">
     <div class="card" style="margin-right: 05px; margin-left: 05px;">
       <div class="ui inverted segment">
         <div class="container">
           <div class="card-body">
-            <p> Latest Pressure:  </p>
-            <p>{{pressure}} </p>
+            <h5> Pressure:  </h5>
+            <p>{{pressure}}  hPa</p>
           </div>
         </div>
       </div>
     </div>
-  </div>
 </div>
 
 

@@ -1,0 +1,25 @@
+{{> menu}}
+
+<section class="ui center aligned middle aligned segment">
+  <h2 class="ui header">
+    {{stationlist.title}}
+  </h2>
+  {{> stationpanel
+    title=stationlist.title
+    longitude=staionlist.longitude
+    latitude=stationlist.latitude
+    currentWeather=stationlist.currentWeather
+    tempC=stationlist.tempC
+    cToF=stationlist.cToF
+    windChill=stationlist.windChill
+    windSpeedToBft=stationlist.windSpeedToBft
+    windDirection=stationlist.windDirection
+    degreesToCompass=stationlist.degreesToCompass
+    pressure=stationlist.pressure
+  }}
+
+  {{> reading-table readings=stationlist.readings}}
+  {{> listreadings}}
+  {{> addreading}}
+
+</section>

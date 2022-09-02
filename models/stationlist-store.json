@@ -1,40 +1,64 @@
-
 {
   "stationlistCollection": [
     {
-      "station": "Tramore",
+      "id": "02",
+      "title": "Dunmore",
       "readings": [
         {
-          "code": "800",
-          "temp": "0.5",
-          "windSpeed": "3.5",
-          "pressure": "1001"
-        },
-        {
-          "code": "600",
-          "temp": "6.0",
-          "windSpeed": "2",
-          "pressure": "1004"
-        }
-      ]
-    },
-    {
-      "station": "Dunmore",
-      "readings": [
-        {
+          "id": "05",
           "code": "700",
           "temp": "8.0",
           "windSpeed": "1.0",
+          "windDirection": "90",
           "pressure": "1000"
         },
         {
+          "id": "06",
           "code": "200",
           "temp": "0.5",
           "windSpeed": "3.5",
+          "windDirection": "120",
           "pressure": "999"
-
+        },
+        {
+          "id": "46539060-2aa7-11ed-ad8d-b31e1f4681c3",
+          "code": "500",
+          "temp": "32",
+          "windDirection": "200",
+          "windSpeed": "10",
+          "pressure": "30"
         }
-      ]
+      ],
+      "code": "200",
+      "currentWeather": "Partial Clouds",
+      "tempC": "0.5",
+      "pressure": "999",
+      "windSpeed": "3.5",
+      "windSpeedToBft": "1",
+      "cToF": 55.4,
+      "degreesToCompass": "North"
+    },
+    {
+      "id": "7879cf60-2aa6-11ed-ad8d-b31e1f4681c3",
+      "title": "Kansas City",
+      "readings": [
+        {
+          "id": "80b9c770-2aa6-11ed-ad8d-b31e1f4681c3",
+          "code": "100",
+          "temp": "55",
+          "windDirection": "260",
+          "windSpeed": "10",
+          "pressure": "005"
+        }
+      ],
+      "code": "100",
+      "currentWeather": "Clear",
+      "tempC": "55",
+      "pressure": "005",
+      "windSpeed": "10",
+      "windSpeedToBft": "2",
+      "cToF": 55.4,
+      "degreesToCompass": "North"
     }
   ]
 }

@@ -1,24 +1,29 @@
 'use strict';
 
 const conversion = require("./conversions");
-const stationAnalytics = {
+const analytics = {
 
    getLastReading(readings) {
       return readings[readings.length - 1];
    },
 
    // Method called in dashboard controller to check the latest readings for the station
-   updateWeather(station) {
-      if (station.readings.length > 0) {
-         station.code = this.getLastReading(station.readings).code;
-         station.currentWeather = conversion.currentWeather(Number(station.code));
-         station.tempC = this.getLastReading(station.readings).temp;
-         station.pressure = this.getLastReading(station.readings).pressure;
-         station.windSpeed = this.getLastReading(station.readings).windSpeed;
-         station.windSpeedToBft = conversion.windSpeedToBft(station.windSpeed)
-         station.cToF = conversion.cToF(station.temp)
+   updateWeather(stationlist) {
+      if (stationlist.readings.length > 0) {
+         stationlist.code = this.getLastReading(stationlist.readings).code;
+         stationlist.currentWeather = conversion.currentWeather(Number(stationlist.code));
+         stationlist.tempC = this.getLastReading(stationlist.readings).temp;
+         stationlist.pressure = this.getLastReading(stationlist.readings).pressure;
+         stationlist.windSpeed = this.getLastReading(stationlist.readings).windSpeed;
+         stationlist.windSpeedToBft = conversion.windSpeedToBft(stationlist.windSpeed);
+         stationlist.cToF = conversion.cToF(stationlist.temp);
+         stationlist.degreesToCompass = conversion.degreesToCompass(stationlist.deg);
+         stationlist.windChill=this.getLastReading(stationlist.readings).windSpeed.temp;
+
       }
 
-   }
+   },
+
+
 }
-module.exports = stationAnalytics;
+module.exports = analytics;
