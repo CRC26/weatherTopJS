@@ -16,6 +16,15 @@ const conversion = {
     ]);
     return weatherCodes.get(code);
   },
+  windChill(tempC, windSpeed) {
+    let wc = Number(13.12 + 0.6215 * tempC - 11.37 * (Math.pow(windSpeed, 0.16)) + 0.3965 * tempC * (Math.pow(windSpeed, 0.16)));
+    //round
+    wc = Math.floor(wc);
+    // chill < temp, return the temp
+    wc = (wc>tempC) ? tempC : wc;
+
+    return wc;
+  },
 
   windSpeedToBft(windSpeed) {
     let bft;
@@ -60,11 +69,8 @@ const conversion = {
     return bft;
   },
 
-  cToF(temp) {
-    let tempF
-    temp = 13;
-    tempF =((temp*9)/5)+32;
-    return tempF;
+  cToF(tempC) {
+   return Number(tempC * 9/5) + 32;
   },
 
 

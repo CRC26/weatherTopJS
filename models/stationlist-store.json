@@ -1,62 +1,40 @@
 {
   "stationlistCollection": [
     {
-      "id": "02",
-      "title": "Dunmore",
-      "readings": [
-        {
-          "id": "05",
-          "code": "700",
-          "temp": "8.0",
-          "windSpeed": "1.0",
-          "windDirection": "90",
-          "pressure": "1000"
-        },
-        {
-          "id": "06",
-          "code": "200",
-          "temp": "0.5",
-          "windSpeed": "3.5",
-          "windDirection": "120",
-          "pressure": "999"
-        },
-        {
-          "id": "46539060-2aa7-11ed-ad8d-b31e1f4681c3",
-          "code": "500",
-          "temp": "32",
-          "windDirection": "200",
-          "windSpeed": "10",
-          "pressure": "30"
-        }
-      ],
-      "code": "200",
-      "currentWeather": "Partial Clouds",
-      "tempC": "0.5",
-      "pressure": "999",
-      "windSpeed": "3.5",
-      "windSpeedToBft": "1",
-      "cToF": 55.4,
-      "degreesToCompass": "North"
-    },
-    {
-      "id": "7879cf60-2aa6-11ed-ad8d-b31e1f4681c3",
+      "id": "94241230-2ae6-11ed-b7af-e34e621d6c68",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "title": "Kansas City",
       "readings": [
         {
-          "id": "80b9c770-2aa6-11ed-ad8d-b31e1f4681c3",
+          "id": "2dd0b5c0-2aea-11ed-9bba-f19fe90d8703",
+          "code": "200",
+          "temp": 30,
+          "windDirection": "195",
+          "windSpeed": 10,
+          "pressure": "29.95"
+        }
+      ]
+    },
+    {
+      "id": "8e919c00-2ae8-11ed-8a90-2dcc098a6965",
+      "userid": "6daae910-2ae8-11ed-8a90-2dcc098a6965",
+      "title": "Orlando",
+      "readings": [
+        {
+          "id": "0b4b46f0-2aea-11ed-9bba-f19fe90d8703",
           "code": "100",
-          "temp": "55",
-          "windDirection": "260",
-          "windSpeed": "10",
-          "pressure": "005"
+          "temp": 30,
+          "windDirection": "200",
+          "windSpeed": 15,
+          "pressure": "30"
         }
       ],
       "code": "100",
       "currentWeather": "Clear",
-      "tempC": "55",
-      "pressure": "005",
-      "windSpeed": "10",
-      "windSpeedToBft": "2",
+      "tempC": 30,
+      "pressure": "30",
+      "windSpeed": 15,
+      "windSpeedToBft": "193",
       "cToF": 55.4,
       "degreesToCompass": "North"
     }

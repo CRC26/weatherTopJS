@@ -1,8 +1,10 @@
 'use strict';
+const accounts = require ('./accounts.js');
 const uuid = require('uuid');
 const logger = require('../utils/logger');
 const stationlistStore = require('../models/stationlist-store.js'); // importing the collection from the station-list-store module.
 const analytics = require("../utils/analytics");  // importing analytics form utils
+
 
 const dashboard = {
   index(request, response) {
@@ -11,9 +13,11 @@ const dashboard = {
     for (let i = 0; i < stationlist.length; i++) {
       analytics.updateWeather(stationlist[i]);
     }
+    const loggedInUser = accounts.getCurrentUser(request);
     // Pass stations to the view
     const viewData = {
       title: 'WeatherTop Dashboard',
+      stationlists: stationlistStore.getUserStationlists(loggedInUser.id),
       stationlist: stationlist
     };
     logger.info('about to render', stationlistStore.getAllStationlists());  // display the stations before we render it
@@ -28,11 +32,14 @@ const dashboard = {
   },
 
   addStationlist(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
     const newStationList = {
       id: uuid.v1(),
+      userid: loggedInUser.id,
       title: request.body.title,
       readings: [],
     };
+    logger.debug('Creating a new Stationlist', newStationList);
     stationlistStore.addStationlist(newStationList);
     response.redirect('/dashboard');
   }

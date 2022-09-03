@@ -47,7 +47,9 @@ const stationlistStore = {
     this.store.save();
     // remove the reading with id readingId from the stationlist
   },
-
+  getUserStationlists(userid) {
+    return this.store.findBy(this.collection, { userid: userid });
+  },
 };
 
 module.exports = stationlistStore;
