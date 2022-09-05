@@ -1,42 +1,90 @@
 {
   "stationlistCollection": [
     {
-      "id": "94241230-2ae6-11ed-b7af-e34e621d6c68",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "title": "Kansas City",
-      "readings": [
-        {
-          "id": "2dd0b5c0-2aea-11ed-9bba-f19fe90d8703",
-          "code": "200",
-          "temp": 30,
-          "windDirection": "195",
-          "windSpeed": 10,
-          "pressure": "29.95"
-        }
-      ]
-    },
-    {
-      "id": "8e919c00-2ae8-11ed-8a90-2dcc098a6965",
+      "id": "fbca87c0-2c30-11ed-aa1a-cb92dbe5bdb1",
       "userid": "6daae910-2ae8-11ed-8a90-2dcc098a6965",
-      "title": "Orlando",
+      "date": "04/09/2022 04:07",
+      "title": "Kanas City",
+      "latitude": "39.0997",
+      "longitude": "94.5786",
       "readings": [
         {
-          "id": "0b4b46f0-2aea-11ed-9bba-f19fe90d8703",
-          "code": "100",
-          "temp": 30,
-          "windDirection": "200",
-          "windSpeed": 15,
-          "pressure": "30"
+          "id": "a70b7900-2c31-11ed-aa1a-cb92dbe5bdb1",
+          "date": "04/09/2022 04:07",
+          "code": "600",
+          "temp": "20",
+          "windDirection": "30",
+          "windSpeed": "8",
+          "pressure": "1017 "
+        },
+        {
+          "id": "ca707cf0-2c32-11ed-aa1a-cb92dbe5bdb1",
+          "date": "04/09/2022 05:15",
+          "code": "500",
+          "temp": "25",
+          "windDirection": "195",
+          "windSpeed": "8",
+          "pressure": "1001"
         }
       ],
-      "code": "100",
-      "currentWeather": "Clear",
-      "tempC": 30,
-      "pressure": "30",
-      "windSpeed": 15,
-      "windSpeedToBft": "193",
-      "cToF": 55.4,
-      "degreesToCompass": "North"
+      "code": "600",
+      "currentWeather": "Rain",
+      "tempC": "20",
+      "pressure": "1017 ",
+      "windSpeed": "8",
+      "windSpeedToBft": "2",
+      "cToF": 68,
+      "degreesToCompass": "North",
+      "windChill": 20,
+      "maxTemp": "20",
+      "minTemp": "20",
+      "maxP": "1017 ",
+      "minP": "1017 ",
+      "maxW": "8",
+      "minW": "8"
+    },
+    {
+      "id": "ee903040-2c31-11ed-aa1a-cb92dbe5bdb1",
+      "userid": "6daae910-2ae8-11ed-8a90-2dcc098a6965",
+      "date": "04/09/2022 03:15",
+      "title": "Orlando",
+      "latitude": "28.5384",
+      "longitude": "81.3789",
+      "readings": [
+        {
+          "id": "6bac8a10-2c32-11ed-aa1a-cb92dbe5bdb1",
+          "date": "04/09/2022 03:15",
+          "code": 200,
+          "temp": "33",
+          "windDirection": "78",
+          "windSpeed": "11",
+          "pressure": " 1017"
+        },
+        {
+          "id": "9cb18520-2c32-11ed-aa1a-cb92dbe5bdb1",
+          "date": "04/09/2022 05:15",
+          "code": 200,
+          "temp": "26",
+          "windDirection": "80",
+          "windSpeed": "2",
+          "pressure": "1001"
+        }
+      ],
+      "code": 200,
+      "currentWeather": "Partial Clouds",
+      "tempC": "26",
+      "pressure": "1001",
+      "windSpeed": "2",
+      "windSpeedToBft": "1",
+      "cToF": 78.8,
+      "degreesToCompass": "North",
+      "windChill": "26",
+      "maxTemp": "33",
+      "minTemp": "26",
+      "maxP": "1001",
+      "minP": " 1017",
+      "maxW": "11",
+      "minW": "2"
     }
   ]
 }

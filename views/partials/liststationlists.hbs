@@ -7,11 +7,14 @@
     {{#each stationlist}}
       {{liststationlists
         date=date
+        latitude=latitude
+        longitude=longitude
         code=code
         temp=temp
         windSpeed=windSpeed
         windDirection=windDirection
         pressure=pressure
+        icon=icon
         stationlistid=../stationlist.id}}
     {{/each}}
     <a href="/stationlist/{{id}}" class="ui icon button">

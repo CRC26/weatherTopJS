@@ -6,8 +6,15 @@
   </h2>
   {{> stationpanel
     title=stationlist.title
-    longitude=staionlist.longitude
+    date=stationlist.date
     latitude=stationlist.latitude
+    longitude=stationlist.longitude
+    minTemp=stationlist.minTemp
+    maxTemp=stationlist.maxTemp
+    minP=stationlist.minTemp
+    maxP=stationlist.maxP
+    maxW=stationlist.maxW
+    minW=stationlist.minW
     currentWeather=stationlist.currentWeather
     tempC=stationlist.tempC
     cToF=stationlist.cToF
@@ -16,6 +23,7 @@
     windDirection=stationlist.windDirection
     degreesToCompass=stationlist.degreesToCompass
     pressure=stationlist.pressure
+    icon=stationlist.icon
   }}
 
   {{> reading-table readings=stationlist.readings}}

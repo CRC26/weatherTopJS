@@ -1,4 +1,5 @@
 'use strict';
+
 const accounts = require ('./accounts.js');
 const uuid = require('uuid');
 const logger = require('../utils/logger');
@@ -36,7 +37,10 @@ const dashboard = {
     const newStationList = {
       id: uuid.v1(),
       userid: loggedInUser.id,
+      date: request.body.date,
       title: request.body.title,
+      latitude: request.body.latitude,
+      longitude: request.body.longitude,
       readings: [],
     };
     logger.debug('Creating a new Stationlist', newStationList);
