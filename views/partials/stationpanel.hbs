@@ -1,74 +1,77 @@
 
-<div class="ui five stackable inverted cards" style="margin-right: 10px; margin-left: 05px;">
+<div class="ui five stackable inverted cards" style="margin-right: 05px; margin-left: 05px;">
   <div class="card">
     <div class="ui inverted segment">
       <div class="container">
         <i class="right floated huge compass icon"></i>
         <div class="card-body">
-          <h2> {{title}} </h2>
+          <h3> {{title}} </h3>
           <p> lat: {{latitude}} °</p>
           <p> lon: {{longitude}} °</p>
         </div>
       </div>
     </div>
   </div>
-    <div class="card" style="margin-right: 05px; margin-left: 05px;">
-      <div class="ui inverted segment">
-        <div class="container">
-          <i class="right floated huge {{icon}} icon"></i>
-          <div class="card-body">
-            <h5> Weather Conditions: </h5>
-            <p> {{currentWeather}} </p>
-          </div>
+  <div class="card" style="margin-right: 05px; margin-left: 05px;">
+    <div class="ui inverted segment">
+      <div class="container">
+        <i class="right floated huge {{icon}} icon"></i>
+        <div class="card-body">
+          <h5> Weather Conditions: </h5>
+          <p> {{currentWeather}} </p>
         </div>
-       </div>
+      </div>
     </div>
-    <div class="card" style="margin-right: 05px; margin-left: 05px;">
-      <div class="ui inverted segment">
+  </div>
+  <div class="card" style="margin-right: 05px; margin-left: 05px;">
+    <div class="ui inverted segment">
+      <div class="container">
         <i class="right floated huge thermometer half icon"></i>
-        <div class="container">
-          <div class="card-body">
-            <h5> Temperature: </h5>
-            <p> {{tempC}}  °C</p>
-            <p> {{cToF}}  °F</p>
-            <p>Max: {{maxTemp}}  °C</p>
-            <p>Min: {{minTemp}}  °C</p>
-            <h5>Feels like:</h5>
-            <p>{{windChill}} °C</p>
-          </div>
+        <div class="card-body">
+          <h5> Temperature: </h5>
+          <p> {{tempC}}  °C</p>
+          <p> {{cToF}}  °F</p>
+          <p>Max: {{maxTemp}}  °C</p>
+          <p>Min: {{minTemp}}  °C</p>
+          <h5>Feels like:</h5>
+          <p>{{windChill}} °C</p>
+          <i class="floated huge {{tempTrend}} icon"></i>
         </div>
       </div>
     </div>
-    <div class="card">
-      <div class="ui inverted segment">
-        <div class="container">
-          <i class="right floated huge paper plane outline icon"></i>
-          <div class="card-body">
-            <h5> Wind Speed:  </h5>
-            <p>{{windSpeedToBft}} Bft</p>
-            <h5>Wind Compass</h5>
-            <p>{{degreesToCompass}}</p>
-            <h5>Feels like:</h5>
-            <p>{{windChill}} C</p>
-            <p>Max: {{maxW}} </p>
-            <p>Min: {{minW}} </p>
-          </div>
+  </div>
+  <div class="card" style="margin-right: 05px; margin-left: 05px;">>
+    <div class="ui inverted segment">
+      <div class="container">
+        <i class="right floated huge paper plane outline icon"></i>
+        <div class="card-body">
+          <h5> Wind Speed:  </h5>
+          <p>{{windSpeedToBft}} Bft</p>
+          <h5>Wind Compass</h5>
+          <p>{{degreesToCompass}}</p>
+          <h5>Feels like:</h5>
+          <p>{{windChill}} C</p>
+          <p>Max: {{maxW}} </p>
+          <p>Min: {{minW}} </p>
+          <i class="floated huge {{windTrend}} icon"></i>
         </div>
       </div>
     </div>
-    <div class="card" style="margin-right: 05px; margin-left: 05px;">
-      <div class="ui inverted segment">
-        <div class="container">
-          <i class="right floated huge tachometer alternate icon"></i>
-          <div class="card-body">
-            <h5> Pressure:  </h5>
-            <p>{{pressure}}  hPa</p>
-            <p>Max: {{maxP}}  hPa</p>
-            <p>Min: {{minP}}  hPa</p>
-          </div>
+  </div>
+  <div class="card" style="margin-right: 05px; margin-left: 05px;">
+    <div class="ui inverted segment">
+      <div class="container">
+        <i class="right floated huge tachometer alternate icon"></i>
+        <div class="card-body">
+          <h5> Pressure:  </h5>
+          <p>{{pressure}}  hPa</p>
+          <p>Max: {{maxP}}  hPa</p>
+          <p>Min: {{minP}}  hPa</p>
+          <i class="floated huge {{pressureTrend}} icon"></i>
         </div>
       </div>
     </div>
+  </div>
 </div>
 
 

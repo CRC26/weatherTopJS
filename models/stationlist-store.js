@@ -47,9 +47,15 @@ const stationlistStore = {
     this.store.save();
     // remove the reading with id readingId from the stationlist
   },
-  getUserStationlists(userid) {
-    return this.store.findBy(this.collection, { userid: userid });
+  getReading(id, readingId) {
+    const stationList = this.store.findOneBy(this.collection, { id: id });
+    const readings = stationList.readings.filter(reading => reading.id == readingId);
+    return readings[0];
   },
+
+  getUserStationlists(userid) {   //creating user id               //https://egghead.io/lessons/javascript-lodash-sortby-and-sortedindex
+    return this.store.findBy(this.collection, { userid: userid });
+  }
 };
 
 module.exports = stationlistStore;

@@ -13,7 +13,6 @@ const analytics = {
     if (stationlist.readings.length > 0) {
       stationlist.code = this.getLastReading(stationlist.readings).code;
       stationlist.currentWeather = conversion.currentWeather(Number(stationlist.code));
-      stationlist.icon = conversion.icon(stationlist.code);
       stationlist.tempC = this.getLastReading(stationlist.readings).temp;
       stationlist.pressure = this.getLastReading(stationlist.readings).pressure;
       stationlist.windSpeed = this.getLastReading(stationlist.readings).windSpeed;
@@ -27,6 +26,7 @@ const analytics = {
       stationlist.minP = analytics.minP(stationlist).pressure;
       stationlist.maxW = analytics.maxW(stationlist).windSpeed;
       stationlist.minW = analytics.minW(stationlist).windSpeed;
+      stationlist.icon = conversion.icon(Number(stationlist.code));
 
     }
   },
@@ -36,11 +36,12 @@ const analytics = {
   },
 
   longitude(stationlist) {
+
     return stationlist.longitude;
   },
 
-  weatherIcon(stationlist){
-    return stationlist.weatherIcon;
+  icon(stationlist) {
+    return stationlist.icon;
   },
 
   maxTemp(stationlist) {
@@ -116,5 +117,56 @@ const analytics = {
     }
     return minW;
   },
-}
+
+  getTempTrend(stationlist){
+    if (stationlist.readings.length >= 3) {
+      let trend1 = stationlist.readings[stationlist.readings.length - 3]; //grabs last 3 readings
+      let trend2 = stationlist.readings[stationlist.readings.length - 2];
+      let trend3 = stationlist.readings[stationlist.readings.length - 1];
+      let tempTrend = "";
+      if (trend3.temp > trend2.temp && trend2.temp > trend1.temp) {
+        tempTrend = "arrow circle up icon";
+      } else if (trend3.temp < trend2.temp && trend2.temp < trend1.temp) {
+        tempTrend = "arrow circle down icon";
+      } else {
+        tempTrend = "arrows alternate vertical icon";
+      }
+      return tempTrend;
+    }
+  },
+
+
+  getWindTrend(stationlist) {
+    if (stationlist.readings.length >= 3) {
+      let windTrend = "";
+      let trend1 = stationlist.readings[stationlist.readings.length - 3]; //grabs last 3 readings
+      let trend2 = stationlist.readings[stationlist.readings.length - 2];
+      let trend3 = stationlist.readings[stationlist.readings.length - 1];
+      if (trend3.windSpeed > trend2.windSpeed && trend2.windSpeed > trend1.windSpeed) {
+        windTrend = "arrow circle up icon";
+      } else if (trend3.windSpeed < trend2.windSpeed && trend2.windSpeed < trend1.windSpeed) {
+        windTrend = "arrow circle down icon";
+      } else {
+        windTrend = "arrows alternate vertical icon";
+      }
+      return windTrend;
+    }
+  },
+  getPressureTrend(stationlist) {
+    if (stationlist.readings.length >= 3) {
+      let pressureTrend = "";
+      let trend1 = stationlist.readings[stationlist.readings.length - 3]; //grabs last 3 readings
+      let trend2 = stationlist.readings[stationlist.readings.length - 2];
+      let trend3 = stationlist.readings[stationlist.readings.length - 1];
+      if (trend3.pressure > trend2.pressure && trend2.pressure > trend1.pressure) {
+        pressureTrend = "arrow circle up icon";
+      } else if (trend3.pressure < trend2.pressure && trend2.pressure < trend1.pressure) {
+        pressureTrend = "arrow circle down icon";
+      } else {
+        pressureTrend = "arrows alternate vertical icon";
+      }
+      return pressureTrend;
+    }
+  },
+};
 module.exports = analytics;

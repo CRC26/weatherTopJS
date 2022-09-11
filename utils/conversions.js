@@ -17,36 +17,35 @@ currentWeather(code)
   ]);
   return weatherCodes.get(code);
 },
-
- icon(code) {
-  let weatherIcon;
-  switch(true) {
+icon(code){
+  let icon;
+  switch (code) {
       case code = 100:
-        weatherIcon = "cloud sun";
+        icon = "cloud sun";
         break;
       case code = 200:
-        weatherIcon = "cloud sun";
+        icon = "cloud sun";
         break;
       case code = 300:
-        weatherIcon = "cloud";
+        icon = "cloud";
         break;
       case code = 400:
-        weatherIcon = "cloud sun rain"
+        icon = "cloud sun rain"
         break;
       case code = 500:
-        weatherIcon = "cloud showers heavy"
+        icon = "cloud showers heavy"
         break;
       case code = 600:
-        weatherIcon = "cloud rain"
+        icon = "cloud rain"
         break;
       case code = 700:
-        weatherIcon = "snowflake"
+        icon = "snowflake"
         break;
       case code = 800:
-        weatherIcon = "bolt"
+        icon = "bolt"
         break;
     }
-    return weatherIcon;
+    return icon;
   },
 
   windChill(tempC, windSpeed)
@@ -146,5 +145,7 @@ currentWeather(code)
         return "North";
       }
   },
-}
+
+
+};
 module.exports = conversion;

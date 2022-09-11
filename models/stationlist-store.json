@@ -1,90 +1,404 @@
 {
   "stationlistCollection": [
     {
-      "id": "fbca87c0-2c30-11ed-aa1a-cb92dbe5bdb1",
-      "userid": "6daae910-2ae8-11ed-8a90-2dcc098a6965",
-      "date": "04/09/2022 04:07",
-      "title": "Kanas City",
-      "latitude": "39.0997",
+      "id": "9951f4b0-2eca-11ed-9f56-c5fed3fc1da0",
+      "userid": "0d866230-2ec1-11ed-a460-7bef6c6aa19b",
+      "title": "Arkansas",
+      "latitude": "53.3498",
       "longitude": "94.5786",
       "readings": [
         {
-          "id": "a70b7900-2c31-11ed-aa1a-cb92dbe5bdb1",
-          "date": "04/09/2022 04:07",
+          "id": "b880a280-31ab-11ed-89b0-d9115a8f8dfc",
           "code": "600",
           "temp": "20",
-          "windDirection": "30",
-          "windSpeed": "8",
-          "pressure": "1017 "
+          "windDirection": "200",
+          "windSpeed": "35",
+          "pressure": "1001",
+          "date": "2022-09-11T08:28:32.297Z"
         },
         {
-          "id": "ca707cf0-2c32-11ed-aa1a-cb92dbe5bdb1",
-          "date": "04/09/2022 05:15",
-          "code": "500",
-          "temp": "25",
+          "id": "c00cdaf0-31ab-11ed-89b0-d9115a8f8dfc",
+          "code": "100",
+          "temp": "32",
           "windDirection": "195",
           "windSpeed": "8",
-          "pressure": "1001"
+          "pressure": "1001",
+          "date": "2022-09-11T08:28:44.959Z"
+        },
+        {
+          "id": "c6e8af20-31ab-11ed-89b0-d9115a8f8dfc",
+          "code": "500",
+          "temp": "55",
+          "windDirection": "200",
+          "windSpeed": "10",
+          "pressure": "30",
+          "date": "2022-09-11T08:28:56.466Z"
         }
       ],
-      "code": "600",
-      "currentWeather": "Rain",
-      "tempC": "20",
-      "pressure": "1017 ",
-      "windSpeed": "8",
+      "code": "500",
+      "currentWeather": "Heavy Showers",
+      "tempC": "55",
+      "pressure": "30",
+      "windSpeed": "10",
       "windSpeedToBft": "2",
-      "cToF": 68,
+      "cToF": 131,
       "degreesToCompass": "North",
-      "windChill": 20,
-      "maxTemp": "20",
+      "windChill": "55",
+      "maxTemp": "55",
       "minTemp": "20",
-      "maxP": "1017 ",
-      "minP": "1017 ",
-      "maxW": "8",
-      "minW": "8"
+      "maxP": "30",
+      "minP": "1001",
+      "maxW": "35",
+      "minW": "35",
+      "icon": "cloud showers heavy",
+      "windTrend": ""
     },
     {
-      "id": "ee903040-2c31-11ed-aa1a-cb92dbe5bdb1",
-      "userid": "6daae910-2ae8-11ed-8a90-2dcc098a6965",
-      "date": "04/09/2022 03:15",
-      "title": "Orlando",
-      "latitude": "28.5384",
+      "id": "62a67670-2fa1-11ed-b010-cd0424654d4c",
+      "userid": "bca60ad0-2f9e-11ed-a029-4b280b65fb43",
+      "title": "Chicago",
+      "latitude": "53.3498",
       "longitude": "81.3789",
       "readings": [
         {
-          "id": "6bac8a10-2c32-11ed-aa1a-cb92dbe5bdb1",
-          "date": "04/09/2022 03:15",
-          "code": 200,
-          "temp": "33",
-          "windDirection": "78",
-          "windSpeed": "11",
-          "pressure": " 1017"
+          "id": "6b49f900-2fa6-11ed-927b-33d362f446d2",
+          "code": "100",
+          "temp": "27",
+          "windDirection": "320",
+          "windSpeed": "6",
+          "pressure": "29.94 in",
+          "date": "2022-09-08T18:45:32.944Z"
         },
         {
-          "id": "9cb18520-2c32-11ed-aa1a-cb92dbe5bdb1",
-          "date": "04/09/2022 05:15",
-          "code": 200,
-          "temp": "26",
-          "windDirection": "80",
-          "windSpeed": "2",
-          "pressure": "1001"
+          "id": "88aab980-2fa6-11ed-927b-33d362f446d2",
+          "code": "300",
+          "temp": "20",
+          "windDirection": "220",
+          "windSpeed": "8",
+          "pressure": "50",
+          "date": "2022-09-08T18:46:22.232Z"
+        },
+        {
+          "id": "fae4ce70-301c-11ed-baaf-3dc9dc7b91a4",
+          "code": "300",
+          "temp": "30",
+          "windDirection": "300",
+          "windSpeed": "10",
+          "pressure": "1001",
+          "date": "2022-09-09T08:54:14.487Z"
         }
       ],
-      "code": 200,
-      "currentWeather": "Partial Clouds",
-      "tempC": "26",
+      "code": "300",
+      "currentWeather": "Cloudy",
+      "tempC": "30",
       "pressure": "1001",
+      "windSpeed": "10",
+      "windSpeedToBft": "2",
+      "cToF": 86,
+      "degreesToCompass": "North",
+      "windChill": "30",
+      "maxTemp": "30",
+      "minTemp": "20",
+      "maxP": "50",
+      "minP": "1001",
+      "maxW": "6",
+      "minW": "6",
+      "icon": "cloud"
+    },
+    {
+      "id": "1fdfa630-2ec1-11ed-a460-7bef6c6aa19b",
+      "userid": "61625140-2e2e-11ed-9d55-8f5b1c1ad7d9",
+      "title": "Orlando",
+      "latitude": "39.0997° N",
+      "longitude": "6.2603",
+      "readings": [
+        {
+          "id": "2be7a2c0-2ec1-11ed-a460-7bef6c6aa19b",
+          "code": "600",
+          "temp": 32,
+          "windDirection": "220",
+          "windSpeed": 9,
+          "pressure": "1017 ",
+          "date": "2022-09-07T15:24:31.852Z"
+        },
+        {
+          "id": "35888a60-2ec1-11ed-a460-7bef6c6aa19b",
+          "code": "200",
+          "temp": 33,
+          "windDirection": "195",
+          "windSpeed": 8,
+          "pressure": "60",
+          "date": "2022-09-07T15:24:48.006Z"
+        },
+        {
+          "id": "0af39cc0-2f9a-11ed-a81f-799d5cca8809",
+          "code": "100",
+          "temp": "33",
+          "windDirection": "195",
+          "windSpeed": "2",
+          "pressure": "60",
+          "date": "2022-09-08T17:16:57.356Z"
+        },
+        {
+          "id": "83cbe440-2f9a-11ed-a81f-799d5cca8809",
+          "code": "700",
+          "temp": "32",
+          "windDirection": "78",
+          "windSpeed": "2",
+          "pressure": "1017 ",
+          "date": "2022-09-08T17:20:20.100Z"
+        }
+      ],
+      "code": "700",
+      "currentWeather": "Snow",
+      "tempC": "32",
+      "pressure": "1017 ",
       "windSpeed": "2",
       "windSpeedToBft": "1",
+      "cToF": 89.6,
+      "degreesToCompass": "North",
+      "windChill": "32",
+      "maxTemp": 33,
+      "minTemp": 32,
+      "maxP": "60",
+      "minP": "1017 ",
+      "maxW": "2",
+      "minW": 9,
+      "icon": "snowflake",
+      "windTrend": ""
+    },
+    {
+      "id": "1cb8ad60-3116-11ed-aa81-873e9bf67f1c",
+      "userid": "fadd7790-2ec0-11ed-a460-7bef6c6aa19b",
+      "title": "St. Louis",
+      "latitude": "38.627003",
+      "longitude": " -90.199402",
+      "readings": []
+    },
+    {
+      "id": "34ecc4c0-3120-11ed-b311-2d1246be0b2a",
+      "userid": "fadd7790-2ec0-11ed-a460-7bef6c6aa19b",
+      "readings": []
+    },
+    {
+      "id": "4d7437d0-3120-11ed-b311-2d1246be0b2a",
+      "userid": "fadd7790-2ec0-11ed-a460-7bef6c6aa19b",
+      "readings": []
+    },
+    {
+      "id": "57a68a00-3120-11ed-86ce-c5ebd03e8a95",
+      "userid": "fadd7790-2ec0-11ed-a460-7bef6c6aa19b",
+      "readings": []
+    },
+    {
+      "id": "76e02930-3120-11ed-86ce-c5ebd03e8a95",
+      "userid": "fadd7790-2ec0-11ed-a460-7bef6c6aa19b",
+      "title": "Dublin, Ireland",
+      "latitude": "53.4264",
+      "longitude": "-6.2499",
+      "readings": []
+    },
+    {
+      "id": "9cbd9ca0-3120-11ed-8b6a-4d87c459ce9c",
+      "userid": "fadd7790-2ec0-11ed-a460-7bef6c6aa19b",
+      "title": "Dublin, Ireland",
+      "latitude": "53.3498",
+      "longitude": "6.2603",
+      "readings": []
+    },
+    {
+      "id": "7ca14920-3121-11ed-8949-b967496efd65",
+      "userid": "fadd7790-2ec0-11ed-a460-7bef6c6aa19b",
+      "title": "dublin, ireland",
+      "latitude": "53.3498",
+      "longitude": "6.2603",
+      "readings": []
+    },
+    {
+      "id": "0f541b20-3123-11ed-9e6f-a3b466243301",
+      "userid": "fadd7790-2ec0-11ed-a460-7bef6c6aa19b",
+      "title": "dublin",
+      "latitude": "39.0997",
+      "longitude": "6.2603",
+      "readings": []
+    },
+    {
+      "id": "3c054c70-3123-11ed-8696-d7b1461cad6f",
+      "userid": "fadd7790-2ec0-11ed-a460-7bef6c6aa19b",
+      "title": "Dublin",
+      "latitude": "53.3498",
+      "longitude": "6.2603",
+      "readings": []
+    },
+    {
+      "id": "8c8387c0-3123-11ed-94d2-5fd1556eee2a",
+      "userid": "fadd7790-2ec0-11ed-a460-7bef6c6aa19b",
+      "title": "Dublin",
+      "latitude": "53.4264",
+      "longitude": "-6.2603",
+      "readings": []
+    },
+    {
+      "id": "3565a170-3124-11ed-8080-7b38a2bc668f",
+      "userid": "fadd7790-2ec0-11ed-a460-7bef6c6aa19b",
+      "title": "Dublin",
+      "latitude": "53.3498",
+      "longitude": "6.2603",
+      "readings": []
+    },
+    {
+      "id": "6356f3e0-3124-11ed-b745-a147f265d95e",
+      "userid": "fadd7790-2ec0-11ed-a460-7bef6c6aa19b",
+      "title": "Dublin",
+      "latitude": "53.4264",
+      "longitude": "-6.2603",
+      "readings": []
+    },
+    {
+      "id": "ffe27bd0-3124-11ed-ac05-e9d5d4707f6b",
+      "userid": "fadd7790-2ec0-11ed-a460-7bef6c6aa19b",
+      "title": "dublin",
+      "latitude": "53.3498",
+      "longitude": "-6.2603",
+      "readings": []
+    },
+    {
+      "id": "11e69e20-3129-11ed-bebc-c53b9d2a1b08",
+      "userid": "eeb1b570-3128-11ed-bebc-c53b9d2a1b08",
+      "title": "Los Angeles",
+      "latitude": "34.0522",
+      "longitude": "118.2437",
+      "readings": [
+        {
+          "id": "1c78eaa0-3129-11ed-bebc-c53b9d2a1b08",
+          "code": "100",
+          "temp": "26",
+          "windDirection": "220",
+          "windSpeed": "9",
+          "pressure": "1017 ",
+          "date": "2022-09-10T16:53:35.946Z"
+        }
+      ],
+      "code": "100",
+      "currentWeather": "Clear",
+      "tempC": "26",
+      "pressure": "1017 ",
+      "windSpeed": "9",
+      "windSpeedToBft": "2",
       "cToF": 78.8,
       "degreesToCompass": "North",
       "windChill": "26",
-      "maxTemp": "33",
+      "maxTemp": "26",
       "minTemp": "26",
-      "maxP": "1001",
-      "minP": " 1017",
-      "maxW": "11",
-      "minW": "2"
+      "maxP": "1017 ",
+      "minP": "1017 ",
+      "maxW": "9",
+      "minW": "9",
+      "icon": "cloud sun"
+    },
+    {
+      "id": "34cc0740-3129-11ed-bebc-c53b9d2a1b08",
+      "userid": "eeb1b570-3128-11ed-bebc-c53b9d2a1b08",
+      "title": "New York",
+      "latitude": "40.7128",
+      "longitude": "74.0060",
+      "readings": [
+        {
+          "id": "40d451f0-3129-11ed-bebc-c53b9d2a1b08",
+          "code": "500",
+          "temp": "20",
+          "windDirection": "220",
+          "windSpeed": "35",
+          "pressure": "30",
+          "date": "2022-09-10T16:54:36.943Z"
+        },
+        {
+          "id": "4c425870-3129-11ed-bebc-c53b9d2a1b08",
+          "code": "700",
+          "temp": "2",
+          "windDirection": "195",
+          "windSpeed": "2",
+          "pressure": "1001",
+          "date": "2022-09-10T16:54:56.119Z"
+        },
+        {
+          "id": "53e79720-3129-11ed-bebc-c53b9d2a1b08",
+          "code": "600",
+          "temp": "55",
+          "windDirection": "30",
+          "windSpeed": "15",
+          "pressure": "005",
+          "date": "2022-09-10T16:55:08.946Z"
+        }
+      ],
+      "code": "700",
+      "currentWeather": "Snow",
+      "tempC": "2",
+      "pressure": "1001",
+      "windSpeed": "2",
+      "windSpeedToBft": "1",
+      "cToF": 35.6,
+      "degreesToCompass": "North",
+      "windChill": 2,
+      "maxTemp": "20",
+      "minTemp": "2",
+      "maxP": "30",
+      "minP": "1001",
+      "maxW": "35",
+      "minW": "35",
+      "icon": "snowflake"
+    },
+    {
+      "id": "e508a0f0-31ab-11ed-89b0-d9115a8f8dfc",
+      "userid": "0d866230-2ec1-11ed-a460-7bef6c6aa19b",
+      "title": "Alaska",
+      "latitude": "64.2008",
+      "longitude": "149.4937",
+      "readings": [
+        {
+          "id": "542c51c0-31ac-11ed-89b0-d9115a8f8dfc",
+          "code": "400",
+          "temp": "12",
+          "windDirection": "105",
+          "windSpeed": "7",
+          "pressure": "29.97",
+          "date": "2022-09-11T08:32:53.468Z"
+        },
+        {
+          "id": "71326f20-31ac-11ed-89b0-d9115a8f8dfc",
+          "code": "300",
+          "temp": "10",
+          "windDirection": "305",
+          "windSpeed": "2",
+          "pressure": "35.95",
+          "date": "2022-09-11T08:33:42.162Z"
+        },
+        {
+          "id": "874fe710-31ac-11ed-89b0-d9115a8f8dfc",
+          "code": "500",
+          "temp": "8",
+          "windDirection": "350",
+          "windSpeed": "1",
+          "pressure": "60",
+          "date": "2022-09-11T08:34:19.265Z"
+        }
+      ],
+      "code": "300",
+      "currentWeather": "Cloudy",
+      "tempC": "10",
+      "pressure": "35.95",
+      "windSpeed": "2",
+      "windSpeedToBft": "1",
+      "cToF": 50,
+      "degreesToCompass": "North",
+      "windChill": "10",
+      "maxTemp": "12",
+      "minTemp": "10",
+      "maxP": "35.95",
+      "minP": "29.97",
+      "maxW": "7",
+      "minW": "7",
+      "icon": "cloud"
     }
   ]
 }

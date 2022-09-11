@@ -1,7 +1,20 @@
-Welcome to the Glitch Template
-==============================
+/*
+Name: Cara Cahill
+Student number 20099855
 
-A starter project for learning Glitch.
+Brief description of piece:
+JavaScript weatherTop Web-Application demonstrating the MVC pattern, using node,
+express, glitch and handlebars. 
 
-This is an Express.js project, designed to work well with the Glitch development environment. It includes basic express setup, templating, routing, JSON based model and session support.
+Known bugs/problems: None
+
+Any sources:
+//https://egghead.io/lessons/javascript-lodash-sortby-and-sortedindex
+coding with mosh video:
+https://www.youtube.com/watch?v=W6NZfCO5SIk
+
+
+
+*/
+
 

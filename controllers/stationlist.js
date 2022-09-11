@@ -1,17 +1,19 @@
 'use strict';
+
+
 const uuid = require('uuid');
 const logger = require('../utils/logger');
 const stationlistStore = require('../models/stationlist-store');
 const analytics = require("../utils/analytics");
+const _ = require('lodash');
 
 const stationlist = {
   index(request, response) {  //The index method
     const stationlistId = request.params.id;    //station*ids
-    const stationlist = stationlistStore.getStationlist(stationlistId)
-    // Check latest readings for each station
-    analytics.updateWeather(stationlist);
     logger.debug('Stationlist id = ', stationlistId);
-    const icon = analytics.weatherIcon(stationlist);
+    const stationlist = stationlistStore.getStationlist(stationlistId)
+    analytics.updateWeather(stationlist);// Check latest readings for each station
+    const icon = analytics.icon(stationlist);
     const maxTemp = analytics.maxTemp(stationlist);
     const minTemp = analytics.minTemp(stationlist);
     const maxP = analytics.maxP(stationlist);
@@ -27,8 +29,12 @@ const stationlist = {
       maxP: maxP,
       minP: minP,
       maxW: maxW,
-      minW: minW
+      minW: minW,
+      pressureTrend: analytics.getPressureTrend(stationlist),
+      tempTrend: analytics.getTempTrend(stationlist),
+      windTrend: analytics.getWindTrend(stationlist),
     };
+
     response.render("stationlist", viewData);
   },
   deleteReading(request, response) {
@@ -41,16 +47,17 @@ const stationlist = {
 
   addReading(request, response) {
     const stationlistId = request.params.id;
-    //const stationlist = stationlistStore.getStationlist(stationlistId);
+
     const newReading = {
       id: uuid.v1(),
-      date: request.body.date,
       code: request.body.code,
       temp: request.body.temp,
       windDirection: request.body.windDirection,
       windSpeed: request.body.windSpeed,
       pressure: request.body.pressure,
       icon: request.body.icon,
+      date: new Date().toISOString(),
+
 
     };
     logger.debug('New Reading = ', newReading);

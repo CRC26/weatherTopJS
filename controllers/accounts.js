@@ -1,23 +1,22 @@
-'use strict';
+"use strict";
 
-const userstore = require('../models/user-store');
-const logger = require('../utils/logger');
-const uuid = require('uuid');
+const userstore = require("../models/user-store");
+const logger = require("../utils/logger");
+const uuid = require("uuid");
 
 const accounts = {
-
   index(request, response) {
     const viewData = {
-      title: 'Login or Signup',
+      title: "Login or Signup"
     };
-    response.render('index', viewData);
+    response.render("index", viewData);
   },
 
   login(request, response) {
     const viewData = {
-      title: 'Login to the Service',
+      title: "Login to the Service"
     };
-    response.render('login', viewData);
+    response.render("login", viewData);
   },
 
   logout(request, response) {
@@ -27,9 +26,9 @@ const accounts = {
 
   signup(request, response) {
     const viewData = {
-      title: 'Login to the Service',
+      title: "Login to the Service"
     };
-    response.render('signup', viewData);
+    response.render("signup", viewData);
   },
 
   register(request, response) {
@@ -40,21 +39,22 @@ const accounts = {
     response.redirect('/');
   },
 
-  authenticate(request, response) {
-    const user = userstore.getUserByEmail(request.body.email);
-    if (user) {
-      response.cookie('stationlist', user.email);
+  authenticate(request, response) {                                 //check if user exist
+    const user = userstore.getUserByEmail(request.body.email);           //check email c
+    const password = userstore.getUserByPassword(request.body.password);  //check password
+    if (user && password) {
+      response.cookie('stationlist', user.email);             //create cookie
       logger.info(`logging in ${user.email}`);
       response.redirect('/dashboard');
     } else {
-      response.redirect('/login');
+      response.redirect('/login');                //ask user to try again if email and password aren't in system
     }
   },
 
   getCurrentUser(request) {
     const userEmail = request.cookies.stationlist;
     return userstore.getUserByEmail(userEmail);
-  },
+  }
 };
 
 module.exports = accounts;

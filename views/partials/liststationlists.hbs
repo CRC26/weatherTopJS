@@ -1,22 +1,17 @@
+
 {{#each stationlist}}
   <section class="ui stacked segment">
     <h2 class="ui header">
-      {{title}}
+      {{>stationpanel}}
     </h2>
-    {{>liststationlists}}
-    {{#each stationlist}}
-      {{liststationlists
-        date=date
-        latitude=latitude
-        longitude=longitude
-        code=code
-        temp=temp
-        windSpeed=windSpeed
-        windDirection=windDirection
-        pressure=pressure
-        icon=icon
-        stationlistid=../stationlist.id}}
-    {{/each}}
+    {{liststationlists
+      date=date
+      code=code
+      temp=temp
+      windSpeed=windSpeed
+      windDirection=windDirection
+      pressure=pressure
+      stationlistid=../stationlist.id}}
     <a href="/stationlist/{{id}}" class="ui icon button">
       <i class="icon green folder open"></i>
     </a>

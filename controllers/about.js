@@ -1,6 +1,7 @@
 'use strict';
 
 const logger = require("../utils/logger");
+const _ = require('lodash');
 
 const about = {
   index(request, response) {

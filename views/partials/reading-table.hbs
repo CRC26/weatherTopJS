@@ -3,18 +3,20 @@
   {{> reading-header}}
   </thead>
   <tbody>
-    {{#each readings}}  {{!//passing stationlist id as a parameter for reading row}}
-      {{>reading-row
-        date=date
-        latitude=latitude
-        longitude=longitude
-        code=code
-        temp=temp
-        windSpeed=windSpeed
-        windDirection=windDirection
-        pressure=pressure
-        icon = icon
-        stationlistid=../stationlist.id}}
-    {{/each}}
+  {{#each readings}}  {{!//passing stationlist id as a parameter for reading row}}
+    {{>reading-row
+      date=date
+      latitude=latitude
+      longitude=longitude
+      code=code
+      temp=temp
+      windSpeed=windSpeed
+      windDirection=windDirection
+      pressure=pressure
+      icon=icon
+      tempTrend=tempTrend
+      windTrend=windTrend
+      stationlistid=../stationlist.id}}
+  {{/each}}
   </tbody>
 </table>
