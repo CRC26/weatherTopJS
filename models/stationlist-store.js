@@ -1,20 +1,20 @@
 'use strict';
 const _ = require('lodash');
 const JsonStore = require('./json-store');
-const axios = require("axios");
+
 
 const stationlistStore = {
-  store: new JsonStore("./models/stationlist-store.json", {
-    stationlistCollection: []
+  store: new JsonStore("./models/stationlist-store.json", {  // locating the Collection array in the stationlist-store.json
+    stationlistCollection: []  //: this is the array of stationlists loaded from the json file
   }),
   collection: "stationlistCollection",
 
   //method
-  getAllStationlists() {
+  getAllStationlists() {    //return all stationlists
     return this.store.findAll(this.collection);
   },
 
-  getStationlist(id) {
+  getStationlist(id) {   //locate and return a specific stationlist
     return this.store.findOneBy(this.collection, { id: id });
   },
 
@@ -47,16 +47,12 @@ const stationlistStore = {
     this.store.save();
     // remove the reading with id readingId from the stationlist
   },
-  getReading(id, readingId) {
-    const stationList = this.store.findOneBy(this.collection, { id: id });
-    const readings = stationList.readings.filter(reading => reading.id == readingId);
-    return readings[0];
-  },
 
+  //method takes a userid and will only fetch stationlist belonging to the user with a specific id.
   getUserStationlists(userid) {   //creating user id               //https://egghead.io/lessons/javascript-lodash-sortby-and-sortedindex
     return this.store.findBy(this.collection, { userid: userid });
   },
 
 };
 
-module.exports = stationlistStore;
+module.exports = stationlistStore; //exporting it to whomsoever requires

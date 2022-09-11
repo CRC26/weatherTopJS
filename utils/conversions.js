@@ -1,6 +1,6 @@
 'use strict';
+
 const _ = require('lodash');
-const { getTempFilename } = require("express-fileupload/lib/utilities");
 const conversion = {
 
 currentWeather(code)
@@ -145,7 +145,6 @@ icon(code){
         return "North";
       }
   },
-
 
 };
 module.exports = conversion;

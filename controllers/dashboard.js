@@ -15,10 +15,10 @@ const dashboard = {
     for (let i = 0; i < stationlist.length; i++) {
       analytics.updateWeather(stationlist[i]);
     }
-    const viewData = {
+    const viewData = {  //creating the viewData object
       title: 'WeatherTop Dashboard',
-      stationlists: stationlistStore.getUserStationlists(loggedInUser.id),
-      stationlist: stationlist.sort((a, b) => a.title.localeCompare(b.title)), //sort
+      stationlists: stationlistStore.getUserStationlists(loggedInUser.id),  //we are calling stationlist belonging to a user
+      stationlist: stationlist.sort((a, b) => a.title.localeCompare(b.title)), //sorting them alphabetically
     };
     logger.info('about to render', stationlistStore.getAllStationlists());
     response.render('dashboard', viewData);
@@ -37,8 +37,8 @@ const dashboard = {
       id: uuid.v1(),
       userid: loggedInUser.id, //in the new station include the id of the currently logged in user
       title: request.body.title,
-      latitude: request.body.latitude,
-      longitude: request.body.longitude,
+      lat: request.body.lat,
+      lon: request.body.lon,
       readings: [],
     };
     logger.debug('Creating a new Stationlist', newStationList);

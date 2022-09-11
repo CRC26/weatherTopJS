@@ -1,6 +1,5 @@
 {
   "users": [
-
     {
       "firstName": "Donald",
       "lastName": "Duck",
@@ -8,13 +7,19 @@
       "password": "2",
       "id": "0d866230-2ec1-11ed-a460-7bef6c6aa19b"
     },
-
     {
       "firstName": "taco",
       "lastName": "shell",
       "email": "taco@shell.com",
       "password": "1",
       "id": "eeb1b570-3128-11ed-bebc-c53b9d2a1b08"
+    },
+    {
+      "firstName": "",
+      "lastName": "",
+      "email": "donald@duck.com",
+      "password": "2",
+      "id": "46565d70-3224-11ed-9585-d733e54dba26"
     }
   ]
 }

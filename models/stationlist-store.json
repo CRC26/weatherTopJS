@@ -1,59 +1,6 @@
 {
   "stationlistCollection": [
     {
-      "id": "9951f4b0-2eca-11ed-9f56-c5fed3fc1da0",
-      "userid": "0d866230-2ec1-11ed-a460-7bef6c6aa19b",
-      "title": "Arkansas",
-      "latitude": "53.3498",
-      "longitude": "94.5786",
-      "readings": [
-        {
-          "id": "b3db61c0-31c9-11ed-b59e-ab6c5995325b",
-          "code": "700",
-          "temp": "20",
-          "windDirection": "30",
-          "windSpeed": "1",
-          "pressure": "005",
-          "date": "2022-09-11T12:03:09.404Z"
-        },
-        {
-          "id": "c097ba30-31c9-11ed-b59e-ab6c5995325b",
-          "code": "600",
-          "temp": "2",
-          "windDirection": "78",
-          "windSpeed": "8",
-          "pressure": "29.95",
-          "date": "2022-09-11T12:03:30.771Z"
-        },
-        {
-          "id": "d11dc4d0-31c9-11ed-b59e-ab6c5995325b",
-          "code": "500",
-          "temp": "26",
-          "windDirection": "200",
-          "windSpeed": "9",
-          "pressure": "30",
-          "date": "2022-09-11T12:03:58.493Z"
-        }
-      ],
-      "code": "600",
-      "currentWeather": "Rain",
-      "tempC": "2",
-      "pressure": "29.95",
-      "windSpeed": "8",
-      "windSpeedToBft": "2",
-      "cToF": 35.6,
-      "degreesToCompass": "North",
-      "windChill": -1,
-      "maxTemp": "20",
-      "minTemp": "2",
-      "maxP": "29.95",
-      "minP": "005",
-      "maxW": "8",
-      "minW": "1",
-      "icon": "cloud rain",
-      "windTrend": ""
-    },
-    {
       "id": "62a67670-2fa1-11ed-b010-cd0424654d4c",
       "userid": "bca60ad0-2f9e-11ed-a029-4b280b65fb43",
       "title": "Chicago",
@@ -260,58 +207,6 @@
       "maxW": "35",
       "minW": "35",
       "icon": "snowflake"
-    },
-    {
-      "id": "e508a0f0-31ab-11ed-89b0-d9115a8f8dfc",
-      "userid": "0d866230-2ec1-11ed-a460-7bef6c6aa19b",
-      "title": "Alaska",
-      "latitude": "64.2008",
-      "longitude": "149.4937",
-      "readings": [
-        {
-          "id": "84eb6400-31c9-11ed-b59e-ab6c5995325b",
-          "code": "700",
-          "temp": "2",
-          "windDirection": "78",
-          "windSpeed": "2",
-          "pressure": "005",
-          "date": "2022-09-11T12:01:50.656Z"
-        },
-        {
-          "id": "908a3e80-31c9-11ed-b59e-ab6c5995325b",
-          "code": "600",
-          "temp": "5",
-          "windDirection": "195",
-          "windSpeed": "1",
-          "pressure": "60",
-          "date": "2022-09-11T12:02:10.152Z"
-        },
-        {
-          "id": "a0ba12d0-31c9-11ed-b59e-ab6c5995325b",
-          "code": "500",
-          "temp": "10",
-          "windDirection": "220",
-          "windSpeed": "1",
-          "pressure": "1001",
-          "date": "2022-09-11T12:02:37.309Z"
-        }
-      ],
-      "code": "500",
-      "currentWeather": "Heavy Showers",
-      "tempC": "10",
-      "pressure": "1001",
-      "windSpeed": "1",
-      "windSpeedToBft": "1",
-      "cToF": 50,
-      "degreesToCompass": "North",
-      "windChill": "10",
-      "maxTemp": "5",
-      "minTemp": "10",
-      "maxP": "60",
-      "minP": "005",
-      "maxW": "1",
-      "minW": "2",
-      "icon": "cloud showers heavy"
     }
   ]
 }

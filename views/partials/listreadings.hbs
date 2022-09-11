@@ -1,4 +1,42 @@
 
-<section class="ui stacked segment">
-  {{station-panel}}  {{station:station}}
-</section>
+<table class="ui table">
+  <thead>
+  <tr>
+    <th> Date/Time </th>
+    <th> Code </th>
+    <th> Temp </th>
+    <th> Wind Speed </th>
+    <th> Wind Direction </th>
+    <th> Pressure </th>
+  </tr>
+  </thead>
+  <tbody>
+  {{#each stationlist.readings}}
+    <tr>
+      <td>
+        {{date}}
+      </td>
+      <td>
+        {{code}}
+      </td>
+      <td>
+        {{temp}}
+      </td>
+      <td>
+        {{windSpeed}}
+      </td>
+      <td>
+        {{windDirection}}
+      </td>
+      <td>
+        {{pressure}}
+      </td>
+      <td>
+        <a href="/stationlist/{{../stationlist.id}}/deletereading/{{id}}" class="ui icon button">
+          <i class="icon trash"></i>
+        </a>
+      </td>
+    </tr>
+  {{/each}}
+  </tbody>
+</table>

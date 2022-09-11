@@ -54,9 +54,7 @@ const accounts = {
   getCurrentUser(request) {
     const userEmail = request.cookies.stationlist;
     return userstore.getUserByEmail(userEmail);
-  }
-
-
+  },
 };
 
 module.exports = accounts;

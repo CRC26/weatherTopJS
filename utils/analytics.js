@@ -1,7 +1,7 @@
 'use strict';
 
 const conversion = require("./conversions");
-const { template } = require("lodash");
+const _ = require('lodash');
 const analytics = {
 
   getLastReading(readings) {
@@ -32,12 +32,11 @@ const analytics = {
   },
 
   latitude(stationlist) {
-    return stationlist.latitude;
+    return stationlist.lat;
   },
 
   longitude(stationlist) {
-
-    return stationlist.longitude;
+    return stationlist.lon;
   },
 
   icon(stationlist) {
