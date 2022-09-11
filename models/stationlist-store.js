@@ -1,7 +1,7 @@
 'use strict';
 const _ = require('lodash');
 const JsonStore = require('./json-store');
-
+const axios = require("axios");
 
 const stationlistStore = {
   store: new JsonStore("./models/stationlist-store.json", {
@@ -55,7 +55,8 @@ const stationlistStore = {
 
   getUserStationlists(userid) {   //creating user id               //https://egghead.io/lessons/javascript-lodash-sortby-and-sortedindex
     return this.store.findBy(this.collection, { userid: userid });
-  }
+  },
+
 };
 
 module.exports = stationlistStore;

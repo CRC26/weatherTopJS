@@ -6,6 +6,7 @@ const logger = require('../utils/logger');
 const stationlistStore = require('../models/stationlist-store');
 const analytics = require("../utils/analytics");
 const _ = require('lodash');
+const axios = require("axios");
 
 const stationlist = {
   index(request, response) {  //The index method
@@ -58,13 +59,34 @@ const stationlist = {
       icon: request.body.icon,
       date: new Date().toISOString(),
 
-
     };
     logger.debug('New Reading = ', newReading);
     stationlistStore.addReading(stationlistId, newReading);
     response.redirect('/stationlist/' + stationlistId);
   },
-
+  //*async addreport(request, response) {
+ //   logger.info("rendering new report");
+ //   let report = {};
+   // const lat = request.body.lat;
+ //   const lng = request.body.lng;
+ //   const requestUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=5e4f3222073ac88008d8b516e18b7df0`;
+ //   const result = await axios.get(requestUrl);
+ //   if (result.status == 200) {
+ //     const reading = result.data.current;
+ //     report.code = reading.weather[0].id;
+ //     report.temperature = reading.temp;
+ //     report.windSpeed = reading.wind.speed;
+ //     report.pressure = reading.main.pressure;
+  //    report.windDirection = reading.wind.deg;
+//    }
+//    console.log(report);
+ //   const viewData = {
+  //   title: "Weather Report",
+ //     reading: report
+ //   };
+//    response.render("stationlist", viewData);
+//  }
+//
 };
 
 module.exports = stationlist;

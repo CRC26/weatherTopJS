@@ -24,7 +24,7 @@ router.get('/about', about.index);
 router.get('/stationlist/:id', stationlist.index);
 router.get('/stationlist/:id/deletereading/:readingid', stationlist.deleteReading);
 router.post('/stationlist/:id/addreading', stationlist.addReading);
-
+//router.post('/stationlist/addreport', stationlist.addreport);
 
 module.exports = router;
 
